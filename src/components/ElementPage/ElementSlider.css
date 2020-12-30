@@ -1,0 +1,27 @@
+.sa-container-slider {
+    height : 450px;  
+  width : 393px;
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;    
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+@media screen and (max-width: 500px) {
+    
+    .form-inline {
+        margin-top: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+    .sa-action-container
+    {
+        margin-top: 200px;
+    }
+}

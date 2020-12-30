@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.sa-link {
+  background-color: #2B2B29;
+  margin-bottom: 100px;
+}
+.sa-link button {
+  position: absolute;
+  /* margin: 10px 0px 0px 110px; */
+  /* margin: 10px auto 0px 530px; */
+  /* margin-right: 50%; */
+  background-color: #2B2B29;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* margin-bottom: 100px; */
+  color: #cecd24;
+  text-decoration: none;
+  font-size: 2em;
+  /* display: flex; */
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 0.5em 2em;
+  border: 2px solid #cecd24;
+  cursor: pointer;
+  transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.sa-link button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #808080;
+  transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  z-index: -1;
+}
+.sa-link button::after {
+  content: "";
+  display: block;
+  background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+  position: absolute;
+  top: 0;
+  left: calc(100% - 3em);
+  right: 3em;
+  bottom: 0;
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.sa-link button:hover {
+  padding: 0.5em 3.5em 0.5em 0.5em;
+  /* cursor: pointer; */
+}
+.sa-link:hover {
+  cursor: pointer;
+}
+.sa-link button:hover::before {
+  left: calc(100% - 3em);
+  right: 0;
+  transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.sa-link button:hover::after {
+  right: 0;
+  transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}

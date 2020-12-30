@@ -1,0 +1,122 @@
+/* *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+body{
+    box-sizing: border-box;
+}
+.ha-navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #008489;
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    /* margin:0px;
+    padding: 0px;
+    box-sizing: border-box; */
+}
+.ha-navBar *{
+    margin: 0px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.ha-logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.ha-logo a:link{
+    color: rgb(226,226,226);
+    text-decoration: none;
+}
+.ha-logo a:visited{
+    color: rgb(226,226,226);;
+    text-decoration: none;
+}
+.ha-nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.ha-nav-links li{
+    list-style: none;
+
+}
+.ha-nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ha-burger{
+    display: none;
+    cursor: pointer;
+}
+.ha-burger div{
+    width:25px;
+    height: 2px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+}
+@media screen and (max-width: 1024px){
+    .ha-nav-links{        
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .ha-nav-links{
+        position: absolute;
+        right: 8px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #008489;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    /* .ha-nav-links li{
+        opacity: 0;
+    } */
+    .ha-burger{
+        display: block;
+    }
+}
+
+.ha-nav-active{
+    transform: translateX(5%);
+    opacity: 1;
+}
+
+/* @keyframes hanavLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} */
+
+.ha-toggle .ha-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.ha-toggle .ha-line2{
+    opacity: 0;
+}
+.ha-toggle .ha-line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

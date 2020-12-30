@@ -1,0 +1,136 @@
+.sh-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 10px;
+  padding: 40px;
+}
+
+
+.sh-form {
+    background-color: #ffff;
+    display: flex;
+    /* width: 1000px; */
+    flex-flow: row wrap;
+    /* height: 60px; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 4px 0px rgba(12,18,18,0,4);
+
+}
+
+
+.sh-label {
+  font-size: 1.0em;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+
+  }
+  
+
+.sh-input {
+  font-size: 1.0rem;
+  padding: 0.5rem 2rem;
+  line-height: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.sh-button {
+  background-color: rgba(14, 13, 13, 0.75);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgba(0, 0, 1, 0.993);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.sh-button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.sh-dropdown{
+  position: relative;
+  width: 200px;
+  padding-left: 5px;
+  color: #3a3a3a;
+  border-right: 2px solid #080202;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+ }
+.sh-default-option{
+  padding: 5px 30px; 
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.sh-dropdown-list ul{
+  list-style: none;
+  background-color: #fff;
+  color: #252525f8;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 150px;
+  border-radius: 5px;
+  display: none;
+}
+
+.sh-dropdown-list ul.sh-active{
+  display: block;
+}
+
+.sh-dropdown-list ul li{
+  padding: 10px 10px 10px 20px;
+  font-size: 1.3rem;
+}
+
+.sh-dropdown-list ul li i{
+  margin-right: 5px;
+}
+
+.sh-dropdown::before{
+  content: "";
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #1d1d1d transparent;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
+
+.sh-dropdown-list ul li::before{
+  content: "";
+  border-width: 0px 8px 8px 8px;
+  border-style: solid;
+  border-color: #fff transparent;
+  position: absolute;
+  bottom: 100%;
+  right: 20px;
+}
+
+.sh-dropdown-list ul li:hover{
+  background-color: #fff;
+  color: #3a3a3a;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+@media (min-width:786px) {
+  .sh-form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  .sh-input {
+    margin-bottom: 0;
+  }
+  
+}

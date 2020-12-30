@@ -1,0 +1,126 @@
+
+
+.ta-footer {
+  color: white;
+  margin-top: 55px;
+  background-color:#303036;
+  position: relative;
+  bottom:0px;
+  width:100%;
+}
+.ta-footer-content{
+  /* border: 1px solid red; */
+  height: 550px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.ta-footer-section{
+  /* border: 1px solid white; */
+  flex: 1;
+  padding: 20px;
+  
+  
+}
+
+.ta-footer .ta-footer-content h1,
+.ta-footer .ta-footer-content h2{
+    color: white;
+}
+.ta-footer .ta-footer-content .ta-about p{
+  padding-left: 10px;
+  font-size: 1.5em;
+}
+.ta-footer .ta-footer-content .ta-about h1 span {
+  padding-left: 10px;
+  color: #05f7ff;
+} 
+
+.ta-footer .ta-footer-content .ta-links{
+  text-align: center;
+}
+.ta-footer .ta-footer-content .ta-links ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.ta-footer .ta-footer-content .ta-links ul a{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.ta-footer .ta-footer-content .ta-links a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ta-footer .ta-footer-content .ta-links a:visited{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.ta-footer .ta-footer-content .ta-links a:hover{
+  color: white;
+  margin-left: 15px;
+  transition: all 0.5s;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.ta-footer .ta-footer-content .ta-contact-form a{
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  /* padding-top: 5px; */
+  vertical-align: middle;
+  color: rgb(187, 179, 179);
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  font-size: 1.37em;
+  border-radius: 5px;
+}
+
+.ta-footer .ta-footer-content .ta-contact-form a:hover{
+  border: 1px solid white;
+  color: white;
+  transition: all .3s;
+}
+
+.ta-footer .ta-footer-content .ta-contact-form ul{
+  list-style-type: none;
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+.ta-footer .ta-footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .ta-footer{
+    height: auto;
+
+  }
+  .ta-footer .ta-footer-content .ta-links{
+    text-align: left;
+  }
+  .ta-footer .ta-footer-content .ta-links ul{
+    padding-left: 20px;
+  }
+  .ta-footer-content {
+      height:auto;
+      flex-direction: column;
+    }
+}
